@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #aaa; }
+
+::selection {
+  background-color: #6D5D4B;
+  color: #f9f7f6; }
+
+.container {
+  display: grid;
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  grid-template-rows: 100vh repeat(4, minmax(50vh, max-content)); }
+
+.heading-1, .heading-2, .heading-3 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400; }
+
+.heading-1 {
+  font-size: 6rem;
+  line-height: 1; }
+
+.heading-2 {
+  font-size: 4rem;
+  line-height: 1; }
+
+.heading-3 {
+  font-size: 2rem;
+  line-height: 1.6;
+  color: #c69963; }
+
+.mb-small {
+  margin-bottom: 2rem; }
+
+.mb-medium {
+  margin-bottom: 3rem; }
+
+.mb-large {
+  margin-bottom: 4rem; }
+
+.mb-huge {
+  margin-bottom: 6rem; }
+
+.btn:link, .btn:visited {
+  display: inline-block;
+  font-family: 'Lato', sans-serif;
+  width: 17rem;
+  padding: 1.5rem 4rem;
+  font-weight: 400;
+  font-size: 2rem;
+  border: 0.3rem solid #6D5D4B;
+  border-radius: 1rem;
+  background-color: transparent;
+  text-decoration: none;
+  color: #aaa;
+  outline: none;
+  cursor: pointer;
+  transition: all .2s; }
+
+.btn:hover {
+  background-color: #6D5D4B;
+  box-shadow: 0 1rem 2rem rgba(74, 78, 105, 0.15); }
+
+.btn:active {
+  box-shadow: 0 0.5rem 1rem rgba(74, 78, 105, 0.15);
+  transform: translateY(0.2rem); }
+
+.header {
+  grid-column: full-start / full-end;
+  padding: 5rem;
+  background-image: url("../img/hero.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  /* Fija la imagen al escrollear */
+  display: grid;
+  grid-template-columns: minmax(min-content, max-content);
+  grid-template-rows: 1fr minmax(min-content, max-content) 1fr;
+  justify-content: center; }
+  .header__nav {
+    margin-top: 2rem;
+    text-align: center; }
+    .header__nav-list {
+      list-style: none; }
+      .header__nav-list li {
+        display: inline; }
+        .header__nav-list li a {
+          margin-right: 1rem;
+          padding: .5rem;
+          font-size: 3rem;
+          text-decoration: none;
+          color: #aaa; }
+  .header__box {
+    margin-top: 8rem;
+    text-align: center; }
+    .header__box-title {
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .5rem;
+      color: #f9f7f6; }
+      .header__box-title span {
+        font-weight: 300; }

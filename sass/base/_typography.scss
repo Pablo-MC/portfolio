@@ -1,0 +1,35 @@
+%heading {
+   font-family: 'Lato', sans-serif;
+   font-weight: 400;
+}
+
+
+// HEADINGS
+.heading-1 {
+   @extend %heading;
+   font-size: 6rem;
+   line-height: 1;
+}
+
+.heading-2 {
+   @extend %heading;
+   font-size: 4rem;
+   // font-style: italic;
+   line-height: 1;
+}
+
+.heading-3 {
+   @extend %heading;
+   font-size: 2rem;
+   line-height: 1.6;
+   // letter-spacing: .1rem;;
+   color: $color-primary;
+}
+
+
+
+// MARGIN-BOTTOM
+.mb-small { margin-bottom: 2rem; }
+.mb-medium { margin-bottom: 3rem; }
+.mb-large { margin-bottom: 4rem; }
+.mb-huge { margin-bottom: 6rem; }
