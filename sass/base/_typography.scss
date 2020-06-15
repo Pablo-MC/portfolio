@@ -13,9 +13,15 @@
 
 .heading-2 {
    @extend %heading;
-   font-size: 4rem;
-   // font-style: italic;
+   font-family: 'Poiret One', cursive;
+   margin-top: 12rem;
+   font-size: 12rem;
    line-height: 1;
+   text-align: center;
+
+   &-light {
+      color: $color-grey-light-1;
+   }
 }
 
 .heading-3 {
@@ -25,7 +31,6 @@
    // letter-spacing: .1rem;;
    color: $color-primary;
 }
-
 
 
 // MARGIN-BOTTOM

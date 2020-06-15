@@ -1,0 +1,28 @@
+.abilities {
+   grid-column: full-start / full-end;
+   // background-color: #9a8c98;
+   background-color: #4a4e69;
+
+   &__gallery {
+      width: 70%;
+      margin: 7rem auto;
+
+      display: grid;
+
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+      justify-content: center;
+      align-items: center;
+      grid-gap: 2rem;
+
+      img {
+         width: 25rem;
+         height: 25rem;
+         padding: 4rem;
+         justify-self: center;  // Alineacion eje horizontal
+      }
+
+      img:hover {
+         animation: slow_motion .7s ease-in-out;
+      }
+   }
+}

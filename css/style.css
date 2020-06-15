@@ -1,3 +1,11 @@
+@keyframes slow_motion {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(0.9); }
+  100% {
+    transform: scale(1); } }
+
 *,
 *::before,
 *::after {
@@ -32,8 +40,13 @@ body {
   line-height: 1; }
 
 .heading-2 {
-  font-size: 4rem;
-  line-height: 1; }
+  font-family: 'Poiret One', cursive;
+  margin-top: 12rem;
+  font-size: 12rem;
+  line-height: 1;
+  text-align: center; }
+  .heading-2-light {
+    color: #f9f7f6; }
 
 .heading-3 {
   font-size: 2rem;
@@ -111,3 +124,34 @@ body {
       color: #f9f7f6; }
       .header__box-title span {
         font-weight: 300; }
+
+.footer {
+  grid-column: full-start / full-end;
+  background-color: #4a4e69; }
+
+.perfil {
+  grid-column: full-start / full-end;
+  background-color: #fff; }
+
+.abilities {
+  grid-column: full-start / full-end;
+  background-color: #4a4e69; }
+  .abilities__gallery {
+    width: 70%;
+    margin: 7rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    justify-content: center;
+    align-items: center;
+    grid-gap: 2rem; }
+    .abilities__gallery img {
+      width: 25rem;
+      height: 25rem;
+      padding: 4rem;
+      justify-self: center; }
+    .abilities__gallery img:hover {
+      animation: slow_motion .7s ease-in-out; }
+
+.contact {
+  grid-column: full-start / full-end;
+  background-color: #c9ada7; }

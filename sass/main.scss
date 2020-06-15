@@ -1,8 +1,14 @@
 @import "abstracts/variables";
 
+@import "base/animations";
 @import "base/base";
 @import "base/typography";
 
 @import "components/buttons";
 
 @import "layout/header";
+@import "layout/footer";
+
+@import "pages/perfil";
+@import "pages/abilities";
+@import "pages/contact";
