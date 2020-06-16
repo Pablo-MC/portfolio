@@ -29,7 +29,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
-  grid-template-rows: 100vh repeat(4, minmax(50vh, max-content)); }
+  grid-template-rows: 100vh repeat(5, minmax(50vh, max-content)); }
 
 .heading-1, .heading-2, .heading-3 {
   font-family: 'Lato', sans-serif;
@@ -113,7 +113,9 @@ body {
           padding: .5rem;
           font-size: 3rem;
           text-decoration: none;
-          color: #aaa; }
+          color: #aaa;
+          font-family: 'Poiret One', cursive;
+          letter-spacing: .4rem; }
   .header__box {
     margin-top: 8rem;
     text-align: center; }
@@ -129,13 +131,9 @@ body {
   grid-column: full-start / full-end;
   background-color: #4a4e69; }
 
-.perfil {
-  grid-column: full-start / full-end;
-  background-color: #fff; }
-
 .abilities {
   grid-column: full-start / full-end;
-  background-color: #4a4e69; }
+  background-color: #61647B; }
   .abilities__gallery {
     width: 70%;
     margin: 7rem auto;
@@ -155,3 +153,37 @@ body {
 .contact {
   grid-column: full-start / full-end;
   background-color: #c9ada7; }
+
+.perfil {
+  grid-column: full-start / full-end;
+  background-image: linear-gradient(to bottom, rgba(27, 31, 34, 0.7), rgba(74, 78, 105, 0.85)), url(../img/perfil-back.jpg);
+  background-size: cover;
+  background-position: center; }
+  .perfil__box {
+    width: 75%;
+    margin: 7rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 5rem; }
+    .perfil__box-description {
+      justify-self: start; }
+    .perfil__box-photo {
+      margin-bottom: 5rem;
+      justify-self: end; }
+      .perfil__box-photo img {
+        width: 50rem;
+        height: 50rem;
+        padding: 1rem; }
+
+.projects {
+  grid-column: full-start / full-end;
+  background-image: linear-gradient(to bottom, rgba(74, 78, 105, 0.93), rgba(74, 78, 105, 0.5)), url(../img/projects-back.jpg);
+  background-size: cover;
+  background-position: center; }
+  .projects__box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    justify-content: center;
+    align-items: center; }

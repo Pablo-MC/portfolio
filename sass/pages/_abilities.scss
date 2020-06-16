@@ -1,14 +1,13 @@
 .abilities {
    grid-column: full-start / full-end;
-   // background-color: #9a8c98;
-   background-color: #4a4e69;
+   background-color: #61647B;
+   // background-color: $color-grey-light-2;
 
    &__gallery {
       width: 70%;
       margin: 7rem auto;
 
       display: grid;
-
       grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
       justify-content: center;
       align-items: center;
@@ -18,7 +17,7 @@
          width: 25rem;
          height: 25rem;
          padding: 4rem;
-         justify-self: center;  // Alineacion eje horizontal
+         justify-self: center;
       }
 
       img:hover {
