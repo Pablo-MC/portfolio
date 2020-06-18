@@ -15,7 +15,10 @@
       align-items: center;
       grid-row-gap: 5rem;
 
-      &-description { justify-self: start; }
+      &-description {
+         justify-self: start;
+         i { margin-right: 2rem; }
+      }
 
       &-photo {
          margin-bottom: 5rem;

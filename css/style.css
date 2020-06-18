@@ -111,7 +111,7 @@ body {
         .header__nav-list li a {
           margin-right: 1rem;
           padding: .5rem;
-          font-size: 3rem;
+          font-size: 3.5rem;
           text-decoration: none;
           color: #aaa;
           font-family: 'Poiret One', cursive;
@@ -129,11 +129,13 @@ body {
 
 .footer {
   grid-column: full-start / full-end;
-  background-color: #4a4e69; }
+  background-color: #aaa; }
 
 .abilities {
   grid-column: full-start / full-end;
-  background-color: #61647B; }
+  background-image: linear-gradient(rgba(74, 78, 105, 0.9), rgba(74, 78, 105, 0.95)), url(../img/contact-back.jpg);
+  background-size: cover;
+  background-position: center; }
   .abilities__gallery {
     width: 70%;
     margin: 7rem auto;
@@ -152,7 +154,38 @@ body {
 
 .contact {
   grid-column: full-start / full-end;
-  background-color: #c9ada7; }
+  background-image: linear-gradient(to bottom, #1b1f22, rgba(74, 78, 105, 0.6)), url(../img/contact-back.jpg);
+  background-size: cover;
+  background-position: center; }
+  .contact__form {
+    width: 80%;
+    margin: 10rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    justify-content: center;
+    align-items: center;
+    grid-column-gap: 5rem;
+    grid-row-gap: 5rem; }
+    .contact__form input, .contact__form textarea, .contact__form button {
+      font-family: 'Lato', sans-serif;
+      font-size: 3rem;
+      font-weight: 300;
+      padding: 2.5rem;
+      outline: none;
+      border-radius: 1rem;
+      border: 1rem solid #aaa;
+      color: #f9f7f6;
+      background-color: transparent; }
+    .contact__form textarea {
+      grid-column: 1 / span 3; }
+    .contact__form button {
+      grid-column: 2 / span 1;
+      justify-self: center;
+      width: 25rem;
+      cursor: pointer;
+      outline: none; }
+      .contact__form button i {
+        margin-left: 1rem; }
 
 .perfil {
   grid-column: full-start / full-end;
@@ -169,6 +202,8 @@ body {
     grid-row-gap: 5rem; }
     .perfil__box-description {
       justify-self: start; }
+      .perfil__box-description i {
+        margin-right: 2rem; }
     .perfil__box-photo {
       margin-bottom: 5rem;
       justify-self: end; }
@@ -183,7 +218,16 @@ body {
   background-size: cover;
   background-position: center; }
   .projects__box {
+    width: 50%;
+    margin: 10rem auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    grid-column-gap: 20rem;
+    grid-row-gap: 7rem; }
+    .projects__box a, .projects__box img {
+      width: 45rem;
+      height: 30rem;
+      border-radius: 5rem;
+      justify-self: center; }

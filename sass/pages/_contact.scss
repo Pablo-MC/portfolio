@@ -1,4 +1,46 @@
 .contact {
    grid-column: full-start / full-end;
-   background-color: #c9ada7;
+
+   background-image: linear-gradient(to bottom, rgba($color-secondary-dark, 95), rgba($color-secondary, .60)), url(../img/contact-back.jpg);
+   background-size: cover;
+   background-position: center;
+
+   &__form {
+      width: 80%;
+      margin: 10rem auto;
+
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+      justify-content: center;
+      align-items: center;
+      grid-column-gap: 5rem;
+      grid-row-gap: 5rem;
+
+      input, textarea, button {
+         font-family: 'Lato', sans-serif;
+         font-size: 3rem;
+         font-weight: 300;
+         padding: 2.5rem;
+         outline: none;
+         border-radius: 1rem;
+         border: 1rem solid $color-grey-light-2;
+         color: $color-grey-light-1;
+         background-color: transparent;
+      }
+
+      textarea {
+         grid-column: 1 / span 3;
+      }
+
+      button {
+         grid-column: 2 / span 1;
+         justify-self: center;
+
+         width: 25rem;
+         cursor: pointer;
+         outline: none;
+
+         i { margin-left: 1rem; }
+      }
+   }
 }

@@ -1,7 +1,10 @@
 .abilities {
    grid-column: full-start / full-end;
-   background-color: #61647B;
-   // background-color: $color-grey-light-2;
+   // background-color: #61647B;
+
+   background-image: linear-gradient(rgba($color-secondary, .90), rgba($color-secondary, .95)), url(../img/contact-back.jpg);
+   background-size: cover;
+   background-position: center;
 
    &__gallery {
       width: 70%;

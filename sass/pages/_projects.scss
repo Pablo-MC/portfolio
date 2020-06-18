@@ -6,9 +6,21 @@
    background-position: center;
 
    &__box {
+      width: 50%;
+      margin: 10rem auto;
+
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
       justify-content: center;
       align-items: center;
+      grid-column-gap: 20rem;
+      grid-row-gap: 7rem;
+
+      a, img {
+         width: 45rem;
+         height: 30rem;
+         border-radius: 5rem;
+         justify-self: center;
+      }
    }
 }

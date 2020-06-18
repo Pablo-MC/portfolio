@@ -7,6 +7,7 @@
 
       <link rel="shortcut icon" type="image/x-icon" href="#">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poiret+One&display=swap">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
       <link rel="stylesheet" href="css/style.css">
 
       <title> Pablo Martín Cruz :: Portafolio </title>
@@ -23,7 +24,8 @@
          </nav>
          <div class="header__box">
             <h1 class="header__box-title heading-1 mb-medium"> Front-end <span> Developer </span> </h1>
-            <h3 class="heading-3 mb-huge"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna <br> aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor <br> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. </h3>
+            <h3 class="heading-3 mb-huge"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna <br> aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor <br> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+            </h3>
             <a class="btn mb-large" href="#projects"> Proyectos </a>
          </div>
       </header>
@@ -32,7 +34,7 @@
          <h2 class="heading-2"> Perfil </h2>
          <div class="perfil__box">
             <div class="perfil__box-description heading-3">
-               <h2 class="heading-1 mb-small"> Pablo Martín Cruz </h2>
+               <h2 class="heading-1 mb-small"> <i class="fas fa-user"></i> Pablo Martín Cruz </h2>
                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                </p>
             </div>
@@ -61,12 +63,22 @@
       <section class="projects" id="projects">
          <h2 class="heading-2 heading-2-light"> Proyectos </h2>
          <div class="projects__box">
-            Aca van los proyectos
+            <a href="#"><img src="img/project.jpg" alt="Project 1"> </a>
+            <a href="#"> <img src="img/project.jpg" alt="Project 2"> </a>
+            <a href="#"> <img src="img/project.jpg" alt="Project 3"> </a>
+            <a href="#"> <img src="img/project.jpg" alt="Project 4"> </a>
          </div>
       </section>
 
       <section class="contact" id="contact">
          <h2 class="heading-2 heading-2-light"> Contacto </h2>
+         <form class="contact__form" action="index.html" method="post">
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Teléfono" required>
+            <textarea name="name" rows="8" placeholder="Mensaje..."></textarea>
+            <button class="btn" type="button"> Enviar <i class="far fa-paper-plane"></i> </button>
+         </form>
       </section>
 
       <footer class="footer">
