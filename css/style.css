@@ -29,7 +29,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
-  grid-template-rows: 100vh repeat(5, minmax(50vh, max-content)); }
+  grid-template-rows: 100vh repeat(5, minmax(min-content, max-content)); }
 
 .heading-1, .heading-2, .heading-3 {
   font-family: 'Lato', sans-serif;
@@ -129,7 +129,38 @@ body {
 
 .footer {
   grid-column: full-start / full-end;
-  background-color: #aaa; }
+  background-color: #4a4e69; }
+  .footer__box {
+    width: 80%;
+    margin: 2rem auto 0 auto;
+    display: grid;
+    grid-template-columns: minmax(min-content, max-content);
+    grid-template-rows: 1fr repeat 2, minmax(min-content, max-content);
+    justify-content: center;
+    align-items: center; }
+    .footer__box-logo {
+      width: 45rem;
+      justify-self: center; }
+    .footer__box-socialLinks {
+      list-style: none;
+      justify-self: center; }
+      .footer__box-socialLinks li {
+        display: inline; }
+        .footer__box-socialLinks li a {
+          margin: 0 2rem;
+          padding: .5rem;
+          font-size: 7rem;
+          text-decoration: none;
+          color: #c69963; }
+          .footer__box-socialLinks li a i:hover {
+            animation: slow_motion .7s ease-in-out; }
+    .footer__box-copyright {
+      margin: 3rem auto;
+      font-size: 3rem;
+      text-align: center;
+      letter-spacing: .3rem;
+      text-transform: uppercase;
+      align-self: start; }
 
 .abilities {
   grid-column: full-start / full-end;

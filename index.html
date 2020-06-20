@@ -56,7 +56,7 @@
             <img src="img/trello.svg" alt="Trello">
             <img src="img/slack.svg" alt="Slack">
             <img src="img/javascript.svg" alt="Javascript">
-            <img src="img/atom.svg" alt="Atom">
+            <img src="img/npm.svg" alt="NPM">
          </div>
       </section>
 
@@ -72,17 +72,25 @@
 
       <section class="contact" id="contact">
          <h2 class="heading-2 heading-2-light"> Contacto </h2>
-         <form class="contact__form" action="index.html" method="post">
-            <input type="text" placeholder="Nombre" required>
-            <input type="email" placeholder="Email" required>
-            <input type="text" placeholder="Teléfono" required>
-            <textarea name="name" rows="8" placeholder="Mensaje..."></textarea>
-            <button class="btn" type="button"> Enviar <i class="far fa-paper-plane"></i> </button>
+         <form class="contact__form" action="https://submit-form.com/hMbY5oEFgi9AS3uRAJz6N" target="_self" method="post">
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="teléfono" placeholder="Teléfono (opcional)">
+            <textarea name="mensaje" rows="8" placeholder="Mensaje..." required></textarea>
+            <button class="btn" type="submit"> Enviar <i class="far fa-paper-plane"></i> </button>
          </form>
       </section>
 
       <footer class="footer">
-
+         <div class="footer__box">
+            <img class="footer__box-logo" src="../img/logo.png" alt="Logo">
+            <ul class="footer__box-socialLinks">
+               <li> <a href="http://linkedin.com/in/pablo-martin-cruz" target="_blank"> <i class="fab fa-linkedin"></i> </a> </li>
+               <li> <a href="https://github.com/Pablo-MC" target="_blank"> <i class="fab fa-github"></i> </a> </li>
+               <li> <a href="https://www.facebook.com/Martin.p.cruz.1988" target="_blank"> <i class="fab fa-facebook-square"></i> </a> </li>
+            </ul>
+            <p class="footer__box-copyright"> &copy;  Pablo Martín Cruz 2020 || <br> Todos los derechos reservados. </p>
+         </div>
       </footer>
 
    </body>
