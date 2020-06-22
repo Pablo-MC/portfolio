@@ -1,44 +1,40 @@
 .header {
    grid-column: full-start / full-end;
 
-   padding: 5rem;
-
    background-image: url("../img/hero.jpg");
    background-size: cover;
    background-position: bottom;
    background-attachment: fixed;  /* Fija la imagen al escrollear */
+   height: 100vh;
 
    display: grid;
    grid-template-columns: minmax(min-content, max-content);
-   grid-template-rows: 1fr minmax(min-content, max-content) 1fr;
+   grid-template-rows: 1fr min-content 1fr;
    justify-content: center;
-
+   align-content: center;
+   justify-items: center;
 
    &__nav {
-      margin-top: 2rem;
-      text-align: center;
+      margin-top: 6rem;
 
       &-list {
          list-style: none;
 
-         li {
+         li, a {
             display: inline;
-
-            a {
-               margin-right: 1rem;
-               padding: .5rem;
-               font-size: 3.5rem;
-               text-decoration: none;
-               color: $color-grey-light-2;
-               font-family: 'Poiret One', cursive;
-               letter-spacing: .4rem;
-            }
+            margin: auto 1rem;
+            font-size: 3.5rem;
+            letter-spacing: .4rem;
+            text-decoration: none;
+            font-family: 'Poiret One', cursive;
+            color: $color-grey-light-2;
          }
       }
    }
 
    &__box {
       margin-top: 8rem;
+      align-self: end;
       text-align: center;
 
       &-title {
@@ -47,9 +43,7 @@
          letter-spacing: .5rem;
          color: $color-grey-light-1;
 
-         span {
-            font-weight: 300;
-         }
+         span { font-weight: 300; }
       }
    }
 }

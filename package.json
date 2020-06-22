@@ -1,7 +1,7 @@
 {
    "name": "portafolio",
    "version": "1.0.0",
-   "description": "",
+   "description": "Portafolio Web Page",
    "main": "index.js",
    "scripts": {
       "watch:sass": "node-sass sass/main.scss css/style.css -w",

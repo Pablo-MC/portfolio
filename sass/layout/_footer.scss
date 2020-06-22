@@ -10,29 +10,23 @@
       grid-template-columns: minmax(min-content, max-content);
       grid-template-rows: 1fr repeat (2, minmax(min-content, max-content));
       justify-content: center;
+      justify-items: center;
       align-items: center;
 
-      &-logo {
-         width: 45rem;
-         justify-self: center;
-      }
+      &-logo { width: 45rem; }
 
       &-socialLinks {
          list-style: none;
-         justify-self: center;
 
-         li {
+         li, a {
             display: inline;
+            margin: auto .5rem;
+            padding: .5rem;
+            font-size: 7rem;
+            text-decoration: none;
+            color: $color-primary;
 
-            a {
-               margin: 0 2rem;
-               padding: .5rem;
-               font-size: 7rem;
-               text-decoration: none;
-               color: $color-primary;
-
-               i:hover { animation: slow_motion .7s ease-in-out; }
-            }
+            i:hover { animation: slow_motion .7s ease-in-out; }
          }
       }
 
@@ -42,7 +36,6 @@
          text-align: center;
          letter-spacing: .3rem;
          text-transform: uppercase;
-         align-self: start;
       }
    }
 }

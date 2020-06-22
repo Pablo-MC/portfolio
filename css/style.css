@@ -28,7 +28,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  grid-template-columns: [full-start] repeat(2, minmax(5rem, 1fr)) [full-end];
   grid-template-rows: repeat(5, minmax(100vh, max-content)) max-content; }
 
 .heading-1, .heading-2, .heading-3 {
@@ -41,12 +41,11 @@ body {
 
 .heading-2 {
   font-family: 'Poiret One', cursive;
-  margin-top: 12rem;
+  margin-top: 10rem;
   font-size: 12rem;
   line-height: 1;
-  text-align: center; }
-  .heading-2-light {
-    color: #f9f7f6; }
+  text-align: center;
+  color: #f9f7f6; }
 
 .heading-3 {
   font-size: 2rem;
@@ -91,33 +90,33 @@ body {
 
 .header {
   grid-column: full-start / full-end;
-  padding: 5rem;
   background-image: url("../img/hero.jpg");
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed;
   /* Fija la imagen al escrollear */
+  height: 100vh;
   display: grid;
   grid-template-columns: minmax(min-content, max-content);
-  grid-template-rows: 1fr minmax(min-content, max-content) 1fr;
-  justify-content: center; }
+  grid-template-rows: 1fr min-content 1fr;
+  justify-content: center;
+  align-content: center;
+  justify-items: center; }
   .header__nav {
-    margin-top: 2rem;
-    text-align: center; }
+    margin-top: 6rem; }
     .header__nav-list {
       list-style: none; }
-      .header__nav-list li {
-        display: inline; }
-        .header__nav-list li a {
-          margin-right: 1rem;
-          padding: .5rem;
-          font-size: 3.5rem;
-          text-decoration: none;
-          color: #aaa;
-          font-family: 'Poiret One', cursive;
-          letter-spacing: .4rem; }
+      .header__nav-list li, .header__nav-list a {
+        display: inline;
+        margin: auto 1rem;
+        font-size: 3.5rem;
+        letter-spacing: .4rem;
+        text-decoration: none;
+        font-family: 'Poiret One', cursive;
+        color: #aaa; }
   .header__box {
     margin-top: 8rem;
+    align-self: end;
     text-align: center; }
     .header__box-title {
       font-weight: 900;
@@ -137,47 +136,43 @@ body {
     grid-template-columns: minmax(min-content, max-content);
     grid-template-rows: 1fr repeat 2, minmax(min-content, max-content);
     justify-content: center;
+    justify-items: center;
     align-items: center; }
     .footer__box-logo {
-      width: 45rem;
-      justify-self: center; }
+      width: 45rem; }
     .footer__box-socialLinks {
-      list-style: none;
-      justify-self: center; }
-      .footer__box-socialLinks li {
-        display: inline; }
-        .footer__box-socialLinks li a {
-          margin: 0 2rem;
-          padding: .5rem;
-          font-size: 7rem;
-          text-decoration: none;
-          color: #c69963; }
-          .footer__box-socialLinks li a i:hover {
-            animation: slow_motion .7s ease-in-out; }
+      list-style: none; }
+      .footer__box-socialLinks li, .footer__box-socialLinks a {
+        display: inline;
+        margin: auto .5rem;
+        padding: .5rem;
+        font-size: 7rem;
+        text-decoration: none;
+        color: #c69963; }
+        .footer__box-socialLinks li i:hover, .footer__box-socialLinks a i:hover {
+          animation: slow_motion .7s ease-in-out; }
     .footer__box-copyright {
       margin: 3rem auto;
       font-size: 3rem;
       text-align: center;
       letter-spacing: .3rem;
-      text-transform: uppercase;
-      align-self: start; }
+      text-transform: uppercase; }
 
 .abilities {
   grid-column: full-start / full-end;
   background-image: linear-gradient(rgba(74, 78, 105, 0.9), rgba(74, 78, 105, 0.95)), url(../img/contact-back.jpg);
-  background-size: cover;
-  background-position: center; }
+  background-size: cover; }
   .abilities__gallery {
-    width: 70%;
+    width: 85%;
     margin: 7rem auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     justify-content: center;
     align-items: center;
-    grid-gap: 2rem; }
+    grid-gap: 3rem; }
     .abilities__gallery img {
-      width: 25rem;
-      height: 25rem;
+      width: 24rem;
+      height: 24rem;
       padding: 4rem;
       justify-self: center; }
     .abilities__gallery img:hover {
@@ -192,7 +187,7 @@ body {
     width: 80%;
     margin: 10rem auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
     justify-content: center;
     align-items: center;
     grid-column-gap: 5rem;
@@ -208,7 +203,8 @@ body {
       color: #f9f7f6;
       background-color: transparent; }
     .contact__form textarea {
-      grid-column: 1 / span 3; }
+      grid-column: 1 / span 3;
+      height: 37rem; }
     .contact__form button {
       grid-column: 2 / span 1;
       justify-self: center;
@@ -224,24 +220,20 @@ body {
   background-size: cover;
   background-position: center; }
   .perfil__box {
-    width: 75%;
+    width: 85%;
     margin: 7rem auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
     justify-content: center;
-    align-items: center;
-    grid-row-gap: 5rem; }
+    justify-items: center;
+    align-items: center; }
     .perfil__box-description {
-      justify-self: start; }
+      justify-self: start;
+      padding: 5rem; }
       .perfil__box-description i {
         margin-right: 2rem; }
-    .perfil__box-photo {
-      margin-bottom: 5rem;
-      justify-self: end; }
-      .perfil__box-photo img {
-        width: 50rem;
-        height: 50rem;
-        padding: 1rem; }
+    .perfil__box img {
+      width: 60%; }
 
 .projects {
   grid-column: full-start / full-end;
@@ -249,16 +241,15 @@ body {
   background-size: cover;
   background-position: center; }
   .projects__box {
-    width: 50%;
-    margin: 10rem auto;
+    width: 70%;
+    margin: 8rem auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
     justify-content: center;
+    justify-items: center;
     align-items: center;
-    grid-column-gap: 20rem;
-    grid-row-gap: 7rem; }
+    grid-row-gap: 8rem; }
     .projects__box a, .projects__box img {
-      width: 45rem;
-      height: 30rem;
-      border-radius: 5rem;
-      justify-self: center; }
+      width: 35rem;
+      height: 25rem;
+      border-radius: 5rem; }

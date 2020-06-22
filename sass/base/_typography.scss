@@ -14,14 +14,11 @@
 .heading-2 {
    @extend %heading;
    font-family: 'Poiret One', cursive;
-   margin-top: 12rem;
+   margin-top: 10rem;
    font-size: 12rem;
    line-height: 1;
    text-align: center;
-
-   &-light {
-      color: $color-grey-light-1;
-   }
+   color: $color-grey-light-1;
 }
 
 .heading-3 {

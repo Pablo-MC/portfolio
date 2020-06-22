@@ -10,7 +10,7 @@
       margin: 10rem auto;
 
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
       justify-content: center;
       align-items: center;
       grid-column-gap: 5rem;
@@ -30,6 +30,7 @@
 
       textarea {
          grid-column: 1 / span 3;
+         height: 37rem;
       }
 
       button {

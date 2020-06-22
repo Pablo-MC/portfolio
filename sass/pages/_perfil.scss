@@ -6,29 +6,21 @@
    background-position: center;
 
    &__box {
-      width: 75%;
+      width: 85%;
       margin: 7rem auto;
 
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
       justify-content: center;
+      justify-items: center;
       align-items: center;
-      grid-row-gap: 5rem;
 
       &-description {
          justify-self: start;
+         padding: 5rem;
          i { margin-right: 2rem; }
       }
 
-      &-photo {
-         margin-bottom: 5rem;
-         justify-self: end;
-
-         img {
-            width: 50rem;
-            height: 50rem;
-            padding: 1rem;
-         }
-      }
+      img { width: 60%; }
    }
 }
