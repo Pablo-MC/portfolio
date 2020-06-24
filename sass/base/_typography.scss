@@ -12,12 +12,12 @@
 }
 
 .heading-2 {
-   @extend %heading;
    font-family: 'Poiret One', cursive;
-   margin-top: 10rem;
+   font-weight: 400;
    font-size: 12rem;
    line-height: 1;
    text-align: center;
+   margin-bottom: 8rem;
    color: $color-grey-light-1;
 }
 
@@ -25,13 +25,12 @@
    @extend %heading;
    font-size: 2rem;
    line-height: 1.6;
-   // letter-spacing: .1rem;;
+   margin-bottom: 8rem;
    color: $color-primary;
 }
 
 
-// MARGIN-BOTTOM
-.mb-small { margin-bottom: 2rem; }
-.mb-medium { margin-bottom: 3rem; }
-.mb-large { margin-bottom: 4rem; }
-.mb-huge { margin-bottom: 6rem; }
+// PADDING-BOTTOM
+.mb-small { padding-bottom: 2rem; }
+.mb-medium { padding-bottom: 3rem; }
+.mb-large { padding-bottom: 6rem; }

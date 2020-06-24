@@ -1,26 +1,31 @@
 .perfil {
-   grid-column: full-start / full-end;
-
+   height: 100vh;
+   padding: 8rem 0;
+   
    background-image: linear-gradient(to bottom, rgba($color-secondary-dark, .70), rgba($color-secondary, .85)), url(../img/perfil-back.jpg);
    background-size: cover;
    background-position: center;
 
    &__box {
       width: 85%;
-      margin: 7rem auto;
+      margin: 0 auto;
 
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
       justify-content: center;
       justify-items: center;
       align-items: center;
+      grid-row-gap: 2rem;
 
       &-description {
          justify-self: start;
          padding: 5rem;
+
          i { margin-right: 2rem; }
       }
 
-      img { width: 60%; }
+      img {
+         align-self: flex-start;
+         width: 60%; }
    }
 }

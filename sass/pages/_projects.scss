@@ -1,5 +1,5 @@
 .projects {
-   grid-column: full-start / full-end;
+   padding: 8rem 0;
 
    background-image: linear-gradient(to bottom, rgba($color-secondary, .93), rgba($color-secondary, .50)), url(../img/projects-back.jpg);
    background-size: cover;
@@ -7,7 +7,7 @@
 
    &__box {
       width: 70%;
-      margin: 8rem auto;
+      margin: 0 auto;
 
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
@@ -20,6 +20,12 @@
          width: 35rem;
          height: 25rem;
          border-radius: 5rem;
+         opacity: .8;
+         transition: opacity .5s;
+      }
+
+      img:hover {
+         opacity: 1;
       }
    }
 }

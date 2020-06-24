@@ -26,12 +26,7 @@ body {
   background-color: #6D5D4B;
   color: #f9f7f6; }
 
-.container {
-  display: grid;
-  grid-template-columns: [full-start] repeat(2, minmax(5rem, 1fr)) [full-end];
-  grid-template-rows: repeat(5, minmax(100vh, max-content)) max-content; }
-
-.heading-1, .heading-2, .heading-3 {
+.heading-1, .heading-3 {
   font-family: 'Lato', sans-serif;
   font-weight: 400; }
 
@@ -41,28 +36,27 @@ body {
 
 .heading-2 {
   font-family: 'Poiret One', cursive;
-  margin-top: 10rem;
+  font-weight: 400;
   font-size: 12rem;
   line-height: 1;
   text-align: center;
+  margin-bottom: 8rem;
   color: #f9f7f6; }
 
 .heading-3 {
   font-size: 2rem;
   line-height: 1.6;
+  margin-bottom: 8rem;
   color: #c69963; }
 
 .mb-small {
-  margin-bottom: 2rem; }
+  padding-bottom: 2rem; }
 
 .mb-medium {
-  margin-bottom: 3rem; }
+  padding-bottom: 3rem; }
 
 .mb-large {
-  margin-bottom: 4rem; }
-
-.mb-huge {
-  margin-bottom: 6rem; }
+  padding-bottom: 6rem; }
 
 .btn:link, .btn:visited {
   display: inline-block;
@@ -89,13 +83,12 @@ body {
   transform: translateY(0.2rem); }
 
 .header {
-  grid-column: full-start / full-end;
+  height: 100vh;
   background-image: url("../img/hero.jpg");
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed;
   /* Fija la imagen al escrollear */
-  height: 100vh;
   display: grid;
   grid-template-columns: minmax(min-content, max-content);
   grid-template-rows: 1fr min-content 1fr;
@@ -127,11 +120,10 @@ body {
         font-weight: 300; }
 
 .footer {
-  grid-column: full-start / full-end;
   background-color: #4a4e69; }
   .footer__box {
     width: 80%;
-    margin: 2rem auto 0 auto;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: minmax(min-content, max-content);
     grid-template-rows: 1fr repeat 2, minmax(min-content, max-content);
@@ -159,12 +151,13 @@ body {
       text-transform: uppercase; }
 
 .abilities {
-  grid-column: full-start / full-end;
+  height: 100vh;
+  padding: 8rem 0;
   background-image: linear-gradient(rgba(74, 78, 105, 0.9), rgba(74, 78, 105, 0.95)), url(../img/contact-back.jpg);
   background-size: cover; }
   .abilities__gallery {
     width: 85%;
-    margin: 7rem auto;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     justify-content: center;
@@ -179,13 +172,14 @@ body {
       animation: slow_motion .7s ease-in-out; }
 
 .contact {
-  grid-column: full-start / full-end;
+  padding: 8rem 0;
+  min-height: 100vh;
   background-image: linear-gradient(to bottom, #1b1f22, rgba(74, 78, 105, 0.6)), url(../img/contact-back.jpg);
   background-size: cover;
   background-position: center; }
   .contact__form {
     width: 80%;
-    margin: 10rem auto;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
     justify-content: center;
@@ -208,41 +202,45 @@ body {
     .contact__form button {
       grid-column: 2 / span 1;
       justify-self: center;
-      width: 25rem;
       cursor: pointer;
+      width: 25rem;
       outline: none; }
       .contact__form button i {
-        margin-left: 1rem; }
+        margin-left: 1rem;
+        color: #c69963; }
 
 .perfil {
-  grid-column: full-start / full-end;
+  height: 100vh;
+  padding: 8rem 0;
   background-image: linear-gradient(to bottom, rgba(27, 31, 34, 0.7), rgba(74, 78, 105, 0.85)), url(../img/perfil-back.jpg);
   background-size: cover;
   background-position: center; }
   .perfil__box {
     width: 85%;
-    margin: 7rem auto;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
     justify-content: center;
     justify-items: center;
-    align-items: center; }
+    align-items: center;
+    grid-row-gap: 2rem; }
     .perfil__box-description {
       justify-self: start;
       padding: 5rem; }
       .perfil__box-description i {
         margin-right: 2rem; }
     .perfil__box img {
+      align-self: flex-start;
       width: 60%; }
 
 .projects {
-  grid-column: full-start / full-end;
+  padding: 8rem 0;
   background-image: linear-gradient(to bottom, rgba(74, 78, 105, 0.93), rgba(74, 78, 105, 0.5)), url(../img/projects-back.jpg);
   background-size: cover;
   background-position: center; }
   .projects__box {
     width: 70%;
-    margin: 8rem auto;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
     justify-content: center;
@@ -252,4 +250,8 @@ body {
     .projects__box a, .projects__box img {
       width: 35rem;
       height: 25rem;
-      border-radius: 5rem; }
+      border-radius: 5rem;
+      opacity: .8;
+      transition: opacity .5s; }
+    .projects__box img:hover {
+      opacity: 1; }

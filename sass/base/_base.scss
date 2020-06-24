@@ -21,10 +21,3 @@ body {
    background-color: $color-grey-dark-2;
    color: $color-grey-light-1;
 }
-
-.container {
-   display: grid;
-   grid-template-columns: [full-start] repeat(2, minmax(5rem, 1fr)) [full-end];
-   grid-template-rows: repeat(5, minmax(100vh, max-content)) max-content;
-   // grid-template-rows: 100vh repeat(5, minmax(min-content, max-content))
-}

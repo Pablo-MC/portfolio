@@ -1,11 +1,10 @@
 .header {
-   grid-column: full-start / full-end;
+   height: 100vh;
 
    background-image: url("../img/hero.jpg");
    background-size: cover;
    background-position: bottom;
    background-attachment: fixed;  /* Fija la imagen al escrollear */
-   height: 100vh;
 
    display: grid;
    grid-template-columns: minmax(min-content, max-content);
