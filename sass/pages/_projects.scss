@@ -1,33 +1,78 @@
 .projects {
-   padding: 8rem 0;
-
+   height: 100vh;
+   padding-top: 8rem;
    background: #16384c;
-   // background: #15212d;
-   // background-image: linear-gradient(to bottom, rgba($color-secondary, .93), rgba($color-secondary, .50)), url(../img/projects-back.jpg);
-   background-size: cover;
-   background-position: center;
 
    &__box {
-      width: 70%;
-      margin: 0 auto;
-
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+      display: flex;
       justify-content: center;
-      justify-items: center;
       align-items: center;
-      grid-row-gap: 8rem;
+      height: 60vh;
 
-      a, img {
-         width: 35rem;
-         height: 25rem;
-         border-radius: 5rem;
-         opacity: .8;
-         transition: opacity .5s;
-      }
+      &-container {
+         position: relative;
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-wrap: wrap;
+         padding: 30px 20px 10px;
 
-      img:hover {
-         opacity: 1;
+         .card {
+            box-sizing: content-box;
+
+            max-width: 300px;
+            height: 420px;
+            height: 215px;
+            background: #fff;
+            margin: 30px 20px;
+            padding: 20px 15px;
+
+            display: flex;
+            border-radius: 4px;
+            flex-direction: column;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+            transition: 0.3s ease-in-out;
+         }
+
+         .card:hover { height: 420px; }
+
+         .card .imgBx {
+            position: relative;
+            background: #fff;
+            top: -60px;
+            left: 20px;
+            min-width: initial;
+            width: 260px;
+            height: 260px;
+            border-radius: 4px;
+            z-index: 1;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+         }
+
+         .card .imgBx img {
+            max-width: 100%;
+            border-radius: 4px;
+         }
+
+         .card .content {
+            position: relative;
+            margin-top: -140px;
+            padding: 10px 15px;
+            text-align: center;
+            color: #111;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s ease-in-out;
+            transition-delay: 0s;
+         }
+
+         .card:hover .content {
+            visibility: visible;
+            opacity: 1;
+            margin-top: -40px;
+            transition-delay: 0.3s;
+         }
       }
    }
 }

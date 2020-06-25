@@ -104,7 +104,7 @@ body {
   transform: translateY(0.2rem); }
 
 .header {
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("../img/hero.jpg");
   background-size: cover;
   background-position: bottom;
@@ -141,7 +141,7 @@ body {
         font-weight: 300; }
 
 .footer {
-  background-color: #4a4e69; }
+  background: #15212d; }
   .footer__box {
     width: 80%;
     margin: 0 auto;
@@ -172,9 +172,9 @@ body {
       text-transform: uppercase; }
 
 .abilities {
-  height: 100vh;
+  min-height: 100vh;
   padding: 8rem 0;
-  background-image: linear-gradient(rgba(74, 78, 105, 0.9), rgba(74, 78, 105, 0.95)), url(../img/contact-back.jpg);
+  background: #15212d;
   background-size: cover; }
   .abilities__gallery {
     width: 85%;
@@ -193,8 +193,8 @@ body {
       animation: slow_motion .7s ease-in-out; }
 
 .contact {
-  padding: 8rem 0;
   min-height: 100vh;
+  padding: 8rem 0;
   background-image: linear-gradient(to bottom, #1b1f22, rgba(74, 78, 105, 0.6)), url(../img/contact-back.jpg);
   background-size: cover;
   background-position: center; }
@@ -211,7 +211,7 @@ body {
       font-family: 'Lato', sans-serif;
       font-size: 3rem;
       font-weight: 300;
-      padding: 2.5rem;
+      padding: 1.5rem;
       outline: none;
       border-radius: 1rem;
       border: 1rem solid #aaa;
@@ -219,7 +219,7 @@ body {
       background-color: transparent; }
     .contact__form textarea {
       grid-column: 1 / span 3;
-      height: 37rem; }
+      height: 30rem; }
     .contact__form button {
       grid-column: 2 / span 1;
       justify-self: center;
@@ -231,9 +231,9 @@ body {
         color: #c69963; }
 
 .perfil {
-  height: 100vh;
+  min-height: 100vh;
   padding: 8rem 0;
-  background-image: linear-gradient(to bottom, rgba(27, 31, 34, 0.7), rgba(74, 78, 105, 0.85)), url(../img/perfil-back.jpg);
+  background: #16384c;
   background-size: cover;
   background-position: center; }
   .perfil__box {
@@ -255,24 +255,63 @@ body {
       width: 60%; }
 
 .projects {
-  padding: 8rem 0;
-  background: #16384c;
-  background-size: cover;
-  background-position: center; }
+  height: 100vh;
+  padding-top: 8rem;
+  background: #16384c; }
   .projects__box {
-    width: 70%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+    display: flex;
     justify-content: center;
-    justify-items: center;
     align-items: center;
-    grid-row-gap: 8rem; }
-    .projects__box a, .projects__box img {
-      width: 35rem;
-      height: 25rem;
-      border-radius: 5rem;
-      opacity: .8;
-      transition: opacity .5s; }
-    .projects__box img:hover {
-      opacity: 1; }
+    height: 60vh; }
+    .projects__box-container {
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 30px 20px 10px; }
+      .projects__box-container .card {
+        box-sizing: content-box;
+        max-width: 300px;
+        height: 420px;
+        height: 215px;
+        background: #fff;
+        margin: 30px 20px;
+        padding: 20px 15px;
+        display: flex;
+        border-radius: 4px;
+        flex-direction: column;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+        transition: 0.3s ease-in-out; }
+      .projects__box-container .card:hover {
+        height: 420px; }
+      .projects__box-container .card .imgBx {
+        position: relative;
+        background: #fff;
+        top: -60px;
+        left: 20px;
+        min-width: initial;
+        width: 260px;
+        height: 260px;
+        border-radius: 4px;
+        z-index: 1;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); }
+      .projects__box-container .card .imgBx img {
+        max-width: 100%;
+        border-radius: 4px; }
+      .projects__box-container .card .content {
+        position: relative;
+        margin-top: -140px;
+        padding: 10px 15px;
+        text-align: center;
+        color: #111;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+        transition-delay: 0s; }
+      .projects__box-container .card:hover .content {
+        visibility: visible;
+        opacity: 1;
+        margin-top: -40px;
+        transition-delay: 0.3s; }
