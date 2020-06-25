@@ -25,12 +25,11 @@
    @extend %heading;
    font-size: 2rem;
    line-height: 1.6;
-   margin-bottom: 8rem;
    color: $color-primary;
 }
 
 
-// PADDING-BOTTOM
-.mb-small { padding-bottom: 2rem; }
-.mb-medium { padding-bottom: 3rem; }
-.mb-large { padding-bottom: 6rem; }
+// MARGIN-BOTTOM
+.mb-small { margin-bottom: 2rem; }
+.mb-medium { margin-bottom: 3rem; }
+.mb-large { margin-bottom: 6rem; }

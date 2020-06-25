@@ -1,6 +1,7 @@
+// Animaciones jQuery:
 $(document).ready(function() {
 
-   // Animación de desplazamiento para los hashes (#) de los enlaces:
+   // Animación de desplazamiento entre los enlaces
    $('a[href*="#"]')
   .not('[href="#"]')
   .not('[href="#0"]')
@@ -29,3 +30,17 @@ $(document).ready(function() {
    });
 
 });
+
+
+// Animación Scroll Top
+window.addEventListener('scroll', function () {
+   var scroll = document.querySelector('.scrollTop');
+   scroll.classList.toggle("active", window.scrollY > 500)
+})
+
+function scrollToTop () {
+   window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+   })
+}
