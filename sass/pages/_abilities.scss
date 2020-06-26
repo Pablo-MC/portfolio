@@ -1,26 +1,28 @@
 .abilities {
    min-height: 100vh;
    padding: 8rem 0;
+   background: #334467;
 
-   background: #15212d;
    // background-image: linear-gradient(rgba($color-secondary, .90), rgba($color-secondary, .95)), url(../img/contact-back.jpg);
-   background-size: cover;
+   // background-size: cover;
 
    &__gallery {
-      width: 85%;
+      width: 80%;
       margin: 0 auto;
 
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
       justify-content: center;
       align-items: center;
-      grid-gap: 3rem;
+      grid-gap: 5rem;
 
       img {
          width: 24rem;
          height: 24rem;
          padding: 4rem;
          justify-self: center;
+         box-shadow: 0 .5rem 2rem rgba(0,0,0, 0.5);
+         border-radius: 2rem;
       }
 
       img:hover { animation: slow_motion .7s ease-in-out; }

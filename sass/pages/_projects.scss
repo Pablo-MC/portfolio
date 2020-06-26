@@ -1,6 +1,7 @@
 .projects {
    height: 100vh;
    padding-top: 8rem;
+
    background: #16384c;
 
    &__box {
@@ -16,61 +17,64 @@
          justify-content: center;
          align-items: center;
          flex-wrap: wrap;
-         padding: 30px 20px 10px;
+         padding: 3rem 2rem 10rem;
+
+         margin-top: 5rem;
 
          .card {
             box-sizing: content-box;
-
-            max-width: 300px;
-            height: 420px;
-            height: 215px;
+            max-width: 30rem;
+            height: 21.5rem;
             background: #fff;
-            margin: 30px 20px;
-            padding: 20px 15px;
+            margin: 3rem 2rem;
+            padding: 2rem 1.5rem;
 
             display: flex;
-            border-radius: 4px;
+            border-radius: .4rem;
             flex-direction: column;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+            box-shadow: 0 .5rem 2rem rgba(0,0,0, 0.5);
+
             transition: 0.3s ease-in-out;
          }
 
-         .card:hover { height: 420px; }
+         .card:hover { height: 42rem; }
 
          .card .imgBx {
             position: relative;
             background: #fff;
-            top: -60px;
-            left: 20px;
+            top: -6rem;
+            left: 2rem;
             min-width: initial;
-            width: 260px;
-            height: 260px;
-            border-radius: 4px;
+            width: 26rem;
+            height: 26rem;
+            border-radius: .4rem;
             z-index: 1;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+            box-shadow: 0 .5rem 2rem rgba(0,0,0, 0.2);
          }
 
          .card .imgBx img {
             max-width: 100%;
-            border-radius: 4px;
+            border-radius: .4rem;
          }
 
          .card .content {
             position: relative;
-            margin-top: -140px;
-            padding: 10px 15px;
+            margin-top: -14rem;
+            padding: 1rem 1.5rem;
             text-align: center;
             color: #111;
             visibility: hidden;
             opacity: 0;
             transition: 0.3s ease-in-out;
+            font-size: 2rem;
+
             transition-delay: 0s;
          }
 
          .card:hover .content {
             visibility: visible;
             opacity: 1;
-            margin-top: -40px;
+            margin-top: -4rem;
             transition-delay: 0.3s;
          }
       }

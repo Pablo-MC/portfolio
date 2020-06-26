@@ -2,10 +2,7 @@
 $(document).ready(function() {
 
    // Animación de desplazamiento entre los enlaces
-   $('a[href*="#"]')
-  .not('[href="#"]')
-  .not('[href="#0"]')
-  .click(function(event) {
+   $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function(event) {
    if (
       location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
       &&
@@ -36,11 +33,11 @@ $(document).ready(function() {
 window.addEventListener('scroll', function () {
    var scroll = document.querySelector('.scrollTop');
    scroll.classList.toggle("active", window.scrollY > 500)
-})
+});
 
 function scrollToTop () {
    window.scrollTo({
       top: 0,
       behavior: 'smooth'
-   })
+   });
 }
