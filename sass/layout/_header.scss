@@ -7,27 +7,27 @@
    background-attachment: fixed;  /* Fija la imagen al escrollear */
 
    display: grid;
-   grid-template-columns: minmax(min-content, max-content);
+   grid-template-columns: minmax(min-content, 110rem);
    grid-template-rows: 1fr min-content 1fr;
    justify-content: center;
    align-content: center;
    justify-items: center;
 
    &__nav {
+      font-family: 'Poiret One', cursive;
+      display: flex;
+      flex-wrap: wrap;
       margin-top: 6rem;
 
-      &-list {
-         list-style: none;
+      li { list-style: none; }
 
-         li, a {
-            display: inline;
-            margin: auto 1rem;
-            font-size: 3.5rem;
-            letter-spacing: .4rem;
-            text-decoration: none;
-            font-family: 'Poiret One', cursive;
-            color: $color-grey-light-2;
-         }
+      a {
+         margin: auto 2.5rem;
+         font-size: 3.5rem;
+         letter-spacing: .4rem;
+         text-decoration: none;
+         color: $color-grey-light-2;
+         outline: none;
       }
    }
 

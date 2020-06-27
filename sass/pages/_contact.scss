@@ -5,28 +5,28 @@
 
    &__container {
       font-family: 'Poppins',sans-serif;
-      width: 110rem;
+      max-width: 110rem;
       margin: 0 auto;
-      padding-top: 6rem;
+      padding-bottom: 10rem;
 
       &-contactForm {
-         padding: 5rem 6rem 3rem 6rem;
-         background: #fff;
          width: 80%;
-         box-shadow: 0 5rem 5rem rgba(0,0,0,0.5);
-         border-radius: 1rem;
          margin: 0 auto;
+         padding: 5rem 6rem 3rem 6rem;
+         border-radius: 1rem;
+         background: #fff;
+         box-shadow: 0 5rem 5rem rgba(0,0,0,0.5);
       }
 
       &-contactForm h3 {
-         color: #0f3959;
+         margin-bottom: 1rem;
          font-size: 2.4rem;
          font-weight: 500;
-         margin-bottom: 1rem;
+         color: #0f3959;
       }
 
       &-contactForm .formBox {
-         position: relative;
+         // position: relative;
          display: flex;
          justify-content: space-between;
          flex-wrap: wrap;
@@ -35,21 +35,20 @@
 
       &-contactForm .formBox .inputBox {
          position: relative;
-         margin-bottom: 3.5rem;
          width: 100%;
+         margin-bottom: 3.5rem;
       }
 
       &-contactForm .formBox .inputBox input,
       &-contactForm .formBox .inputBox textarea {
          font-family: 'Poppins',sans-serif;
-         width: 100%;
-         padding: .5rem 0;
-         resize: none;
          font-size: 1.8rem;
          font-weight: 300;
-         color: #333;
+         width: 100%;
+         padding: .5rem 0;
          border: none;
          border-bottom: .1rem solid #777;
+         color: #333;
          outline: none;
       }
 
@@ -61,31 +60,32 @@
          padding: .5rem 0;
          font-size: 1.8rem;
          font-weight: 300;
+         pointer-events: none; // Activa el evento de deplazamiento sobre el input.
          color: #333;
+
          transition: 0.3s;
-         pointer-events: none;
       }
 
       &-contactForm .formBox .inputBox input:focus ~ span,
       &-contactForm .formBox .inputBox textarea:focus ~ span,
       &-contactForm .formBox .inputBox input:valid ~ span,
       &-contactForm .formBox .inputBox textarea:valid ~ span {
-         transform: translateY(-2rem);
          font-size: 1.2rem;
          font-weight: 400;
          letter-spacing: .1rem;
+         transform: translateY(-2rem);
          color: #ff568c;
       }
 
       &-contactForm .formBox .inputBox input[type="submit"] {
          position: relative;
+         max-width: 15rem;
+         padding: 1.2rem;
+         border: none;
+         border-radius: .5rem;
          cursor: pointer;
          background: #0f3959;
          color: #fff;
-         border: none;
-         max-width: 15rem;
-         padding: 1.2rem;
-         border-radius: .5rem;
       }
 
       &-contactForm .formBox .inputBox input[type="submit"]:hover { background: #ff568c; }
