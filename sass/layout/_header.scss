@@ -1,6 +1,8 @@
 .header {
    min-height: 100vh;
 
+   padding: 0 4rem;
+
    background-image: url("../img/hero.jpg");
    background-size: cover;
    background-position: bottom;
@@ -22,8 +24,7 @@
       li { list-style: none; }
 
       a {
-         margin: auto 2.5rem;
-         font-size: 3.5rem;
+         margin: auto 2rem;
          letter-spacing: .4rem;
          text-decoration: none;
          color: $color-grey-light-2;
@@ -31,18 +32,19 @@
       }
    }
 
-   &__box {
+   &__title {
       margin-top: 8rem;
       align-self: end;
       text-align: center;
 
-      &-title {
-         font-weight: 900;
+      h1 {
+         font-size: 6rem;
+         line-height: 1.2;
          text-transform: uppercase;
          letter-spacing: .5rem;
          color: $color-grey-light-1;
-
-         span { font-weight: 300; }
       }
+
+      span { font-weight: 300; }
    }
 }

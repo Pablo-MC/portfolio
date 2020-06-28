@@ -1,7 +1,6 @@
 .projects {
-   height: 100vh;
-   padding-top: 8rem;
-
+   height: 90vh;
+   padding: 6rem 4rem 0 4rem;
    background: #16384c;
 
    &__box {
@@ -9,28 +8,23 @@
       justify-content: center;
       align-items: center;
 
-      height: 60vh;
-
       &-container {
          position: relative;
          max-width: 120rem;
+         width: 100%;
+         margin-top: 5rem;
 
          display: flex;
          justify-content: center;
-         align-items: center;
          flex-wrap: wrap;
-
-         width: 100%;
-         margin-top: 5rem;
-         padding: 3rem 2rem 10rem;
 
          .card {
             display: flex;
             flex-direction: column;
 
             box-sizing: content-box;
-            max-width: 30rem;
-            height: 21.5rem;
+            max-width: 25rem;
+            height: 16.5rem;
             margin: 3rem 2rem;
             padding: 2rem 1.5rem;
             border-radius: .4rem;
@@ -40,13 +34,12 @@
             transition: 0.3s ease-in-out;
          }
 
-         .card:hover { height: 42rem; }
+         .card:hover { height: 37rem; }
 
          .card .imgBx {
             position: relative;
-            // min-width: initial;
-            width: 26rem;
-            height: 26rem;
+            width: 21rem;
+            height: 21rem;
             top: -6rem;
             left: 2rem;
             border-radius: .4rem;
@@ -63,15 +56,12 @@
          .card .content {
             margin-top: -14rem;
             padding: 1rem 1.5rem;
-            font-size: 2rem;
+            font-size: 1.7rem;
             text-align: center;
             opacity: 0;
             color: #111;
-            // position: relative;
-            // visibility: hidden;
 
             transition: 0.3s ease-in-out;
-            transition-delay: 0s;
          }
 
          .card:hover .content {

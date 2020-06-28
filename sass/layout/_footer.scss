@@ -1,6 +1,7 @@
 .footer {
    background: #112d42;
    margin: 0 auto;
+   padding: 3rem 4rem;
 
    &__socialLinks {
       display: flex;
@@ -20,10 +21,11 @@
    }
 
    &__copyright {
-      padding: 3rem 0;
+      padding-top: 3rem;
       font-size: 3rem;
       text-align: center;
       letter-spacing: .3rem;
       text-transform: uppercase;
+      color: $color-grey-light-2;
    }
 }
