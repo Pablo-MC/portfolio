@@ -3,21 +3,21 @@
    margin: 0 auto;
    padding: 3rem 4rem;
 
-   &__socialLinks {
+   &__list {
       display: flex;
       justify-content: center;
+   }
 
-      li {list-style: none; }
+   &__item { list-style: none; }
 
-      a {
-         margin: auto 2.5rem;
-         font-size: 6rem;
-         text-decoration: none;
-         color: $color-primary;
-         outline: none;
+   &__link {
+      margin: auto 2.5rem;
+      font-size: 6rem;
+      text-decoration: none;
+      color: $color-primary;
+      outline: none;
 
-         i:hover { animation: slow_motion .7s ease-in-out; }
-      }
+      i:hover { animation: slow_motion .7s ease-in-out; }
    }
 
    &__copyright {

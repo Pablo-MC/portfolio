@@ -1,93 +1,99 @@
 .contact {
-   // min-height: 100vh
-   padding: 10rem 4rem 0 4rem;
+   padding: 10rem 4rem 5rem 4rem;
    background: #112d42;
 
-   &__container {
+   h3 {
+      margin-left: 1rem;
+      font-size: 2.4rem;
+      font-weight: 500;
+      color: #0f3959;
+   }
+
+   &__form {
       font-family: 'Poppins',sans-serif;
-      max-width: 110rem;
+      max-width: 100rem;
       margin: 0 auto;
-      padding-bottom: 5rem;
+      padding: 5rem;
+      border-radius: 1rem;
+      background: #fff;
+      box-shadow: 0 3rem 3rem rgba(0,0,0,0.5);
+   }
 
-      &-contactForm {
-         width: 85%;
-         margin: 0 auto;
-         padding: 5rem;
-         border-radius: 1rem;
-         background: #fff;
-         box-shadow: 0 3rem 3rem rgba(0,0,0,0.5);
-      }
+   &__box {
+      display: grid;
 
-      &-contactForm h3 {
-         margin-bottom: 1rem;
-         font-size: 2.4rem;
-         font-weight: 500;
-         color: #0f3959;
-      }
+      grid-template-columns: repeat(auto-fit, minmax(min-content, 40rem));
+      grid-auto-rows: 6.5rem;
 
-      &-contactForm .formBox {
-         display: flex;
-         justify-content: space-between;
-         flex-wrap: wrap;
-         padding-top: 1.5rem;
-      }
+      justify-content: space-around;
+      align-items:flex-end;
+      grid-gap: 5rem;
+   }
 
-      &-contactForm .formBox .inputBox:not(:last-child) {
-         position: relative;
-         width: 100%;
-         margin-bottom: 3.5rem;
-      }
+   &__input {
+      position: relative;
+      width: 100%;
+   }
 
-      &-contactForm .formBox .inputBox input,
-      &-contactForm .formBox .inputBox textarea {
-         font-family: 'Poppins',sans-serif;
-         font-size: 1.8rem;
-         font-weight: 300;
-         width: 100%;
-         padding: .5rem 0;
-         border: none;
-         border-bottom: .1rem solid #777;
-         color: #333;
-         outline: none;
-      }
+   &__input input,
+   &__input textarea {
+      font-family: 'Poppins',sans-serif;
+      font-size: 1.8rem;
+      font-weight: 300;
+      width: 100%;
+      padding: .5rem 0;
+      border: none;
+      border-bottom: .1rem solid #777;
+      color: #333;
+      outline: none;
+   }
 
-      &-contactForm .formBox .inputBox textarea { min-height: 9.2rem;}
+   &__input textarea { min-height: 9.2rem; }
 
-      &-contactForm .formBox .inputBox span {
-         position: absolute;
-         left: 0;
-         padding: .5rem 0;
-         font-size: 1.8rem;
-         font-weight: 300;
-         pointer-events: none; // Activa el evento de deplazamiento sobre el input.
-         color: #333;
+   &__input span {
+      position: absolute;
+      left: 0;
+      padding: .5rem 0;
+      font-size: 1.8rem;
+      font-weight: 300;
+      pointer-events: none; // Activa el evento de deplazamiento sobre el input.
+      color: #333;
 
-         transition: 0.3s;
-      }
+      transition: 0.3s;
+   }
 
-      &-contactForm .formBox .inputBox input:focus ~ span,
-      &-contactForm .formBox .inputBox textarea:focus ~ span,
-      &-contactForm .formBox .inputBox input:valid ~ span,
-      &-contactForm .formBox .inputBox textarea:valid ~ span {
-         font-size: 1.2rem;
-         font-weight: 400;
-         letter-spacing: .1rem;
-         transform: translateY(-2rem);
-         color: #ff568c;
-      }
+   &__input input:focus ~ span,
+   &__input textarea:focus ~ span,
+   &__input input:valid ~ span,
+   &__input textarea:valid ~ span {
+      font-size: 1.2rem;
+      font-weight: 400;
+      letter-spacing: .1rem;
+      transform: translateY(-2rem);
+      color: #ff568c;
+   }
 
-      &-contactForm .formBox .inputBox input[type="submit"] {
-         position: relative;
-         width: 15rem;
-         padding: 1.2rem;
-         border: none;
-         border-radius: .5rem;
-         cursor: pointer;
-         background: #0f3959;
-         color: #fff;
-      }
+   &__input input[type="submit"] {
+      position: relative;
+      width: 15rem;
+      padding: 1.2rem;
+      border: none;
+      border-radius: .5rem;
+      cursor: pointer;
+      background: #0f3959;
+      color: #fff;
+   }
 
-      &-contactForm .formBox .inputBox input[type="submit"]:hover { background: #ff568c; }
+   &__input input[type="submit"]:hover { background: #ff568c; }
 
+   .button {
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+      align-self:flex-start;
+   }
+
+   .textarea {
+      grid-column: 1 / 3;
+      grid-row: 2 / 3;
    }
 }

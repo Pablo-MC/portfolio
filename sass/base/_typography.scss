@@ -1,23 +1,13 @@
 // HEADINGS
-.heading-1 {
+.heading {
    font-family: 'Poiret One', cursive;
-   font-size: 10rem;
+   font-size: 8rem;
    font-weight: 400;
    text-align: center;
    color: $color-grey-light-1;
 }
 
-.heading-2 {
-   font-size: 4rem;
-   font-weight: 400;
-   line-height: 1;
-}
-
-.heading-3 {
-   font-size: 2rem;
-}
-
 // MARGIN-BOTTOM
 .mb-small { margin-bottom: 2rem; }
-.mb-medium { margin-bottom: 3rem; }
+.mb-medium { margin-bottom: 4rem; }
 .mb-large { margin-bottom: 6rem; }
