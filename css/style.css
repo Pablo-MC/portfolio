@@ -162,7 +162,7 @@ body {
 
 .abilities {
   padding: 6rem 4rem 10rem 4rem;
-  background: #334467; }
+  background: #112d42; }
   .abilities__gallery {
     max-width: 70rem;
     margin: 0 auto;
@@ -273,7 +273,8 @@ body {
   .perfil-photo {
     justify-self: center; }
     .perfil-photo__img {
-      width: 40rem; }
+      width: 40rem;
+      border-radius: 50%; }
 
 .projects {
   padding: 6rem 4rem 0 4rem;
