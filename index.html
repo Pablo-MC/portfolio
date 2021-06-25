@@ -1,91 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-      <link rel="shortcut icon" type="image/x-icon" href="#">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&family=Poiret+One&family=Poppins:wght@300;400;500&display=swap" >
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
-      <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="css/queries.css">
+		<link rel="shortcut icon" type="image/x-icon" href="#">
+		<link rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&family=Poiret+One&family=Poppins:wght@300;400;500&display=swap">
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+			integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+		<link rel="stylesheet" href="sass/main.scss">
+		<title>Pablo Martín Cruz :: Portafolio</title>
+	</head>
+	<body>
+		<header class="header">
+			<nav class="header-nav">
+				<ul class="header-nav__list">
+					<li class="header-nav__item">
+						<a class="header-nav__link" href="#perfil">Perfil</a>
+					</li>
+					<li class="header-nav__item">
+						<a class="header-nav__link" href="#abilities">Habilidades</a>
+					</li>
+					<li class="header-nav__item"> <a class="header-nav__link" href="#contact">Contacto</a> </li>
+				</ul>
+			</nav>
+			<div class="header-content">
+				<h1 class="header-content__title mb-medium"> Front-end <span> Developer </span> </h1>
+				<p class="header-content__text mb-large"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+					eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+					ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+					velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+				<a class="btn" href="#projects">Proyectos</a>
+			</div>
+		</header>
 
-      <title> Pablo Martín Cruz :: Portafolio </title>
-   </head>
-   <body>
+		<main>
+			<section class="perfil" id="perfil">
+				<div class="perfil-content">
+					<p class="perfil-content__name"> <i class="perfil-content__icon fas fa-user"></i>Pablo Martín Cruz</p>
+					<p class="perfil-content__text">
+						Desarrollador web enfocado principalmente en el área del Front-end. <br>
+						Utilizo como preferencia tecnologías relacionadas al ecosistema de JavaScript. 💛 <br>
+						Poseo como objetivo principal, el cual me motiva día a día a seguir aprendiendo desarrollo Web, construir
+						soluciones a problemas que realmente ayuden con eficacia a mejorar la vida de las personas.
+					</p>
+				</div>
+				<div class="perfil-photo">
+					<img class="perfil-photo__img" src="img/pablo.jpg" alt="Photo Perfil">
+				</div>
+			</section>
 
-      <header class="header">
-         <nav class="header-nav">
-            <ul class="header-nav__list">
-               <li class="header-nav__item"> <a class="header-nav__link" href="#perfil">Perfil</a> </li>
-               <li class="header-nav__item"> <a class="header-nav__link" href="#abilities">Habilidades</a> </li>
-               <li class="header-nav__item"> <a class="header-nav__link" href="#contact">Contacto</a> </li>
-            </ul>
-         </nav>
-         <div class="header-content">
-            <h1 class="header-content__title mb-medium"> Front-end <span> Developer </span> </h1>
-            <p class="header-content__text mb-large"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-            <a class="btn" href="#projects">Proyectos</a>
-         </div>
-      </header>
+			<section class="abilities" id="abilities">
+				<h2 class="heading mb-large">Habilidades</h2>
+				<div class="abilities__gallery">
+					<img class="abilities__img" src="img/html.svg" alt="HTML">
+					<img class="abilities__img" src="img/github.svg" alt="Github">
+					<img class="abilities__img" src="img/sass.svg" alt="Sass">
+					<img class="abilities__img" src="img/git.svg" alt="Git">
+					<img class="abilities__img" src="img/css.svg" alt="CSS">
+					<img class="abilities__img" src="img/react.svg" alt="React">
+					<!-- <img class="abilities__img" src="img/trello.svg" alt="Trello"> -->
+					<!-- <img class="abilities__img" src="img/slack.svg" alt="Slack"> -->
+					<img class="abilities__img" src="img/javascript.svg" alt="Javascript">
+					<img class="abilities__img" src="img/npm.svg" alt="NPM">
+				</div>
+			</section>
 
-      <main>
-         <section class="perfil" id="perfil">
-            <div class="perfil-content">
-               <p class="perfil-content__name"> <i class="perfil-content__icon fas fa-user"></i>Pablo Martín Cruz</p>
-               <p class="perfil-content__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-            </div>
-            <div class="perfil-photo">
-               <img class="perfil-photo__img" src="img/avatar.png" alt="Photo Perfil">
-            </div>
-         </section>
+			<section class="projects" id="projects">
+				<h2 class="heading mb-large">Proyectos</h2>
+				<div class="container">
+					<div class="container__card">
+						<div class="container__imgBx">
+							<a href="#"> <img class="container__img" src="img/project-1.jpg" alt="Project 1"> </a>
+						</div>
+						<h2 class="container__title">Proyecto 1</h2>
+					</div>
+					<div class="container__card">
+						<div class="container__imgBx">
+							<a href="#"> <img class="container__img" src="img/project-2.jpg" alt="Project 2"> </a>
+						</div>
+						<h2 class="container__title">Proyecto 2</h2>
+					</div>
+					<div class="container__card">
+						<div class="container__imgBx">
+							<a href="#"> <img class="container__img" src="img/project-3.jpg" alt="Project 3"> </a>
+						</div>
+						<h2 class="container__title">Proyecto 3</h2>
+					</div>
+				</div>
+			</section>
 
-         <section class="abilities" id="abilities">
-            <h2 class="heading mb-large">Habilidades</h2>
-            <div class="abilities__gallery">
-               <img class="abilities__img" src="img/html.svg" alt="HTML">
-               <img class="abilities__img" src="img/github.svg" alt="Github">
-               <img class="abilities__img" src="img/sass.svg" alt="Sass">
-               <img class="abilities__img" src="img/git.svg" alt="Git">
-               <img class="abilities__img" src="img/css.svg" alt="CSS">
-               <img class="abilities__img" src="img/react.svg" alt="React">
-               <!-- <img class="abilities__img" src="img/trello.svg" alt="Trello"> -->
-               <!-- <img class="abilities__img" src="img/slack.svg" alt="Slack"> -->
-               <img class="abilities__img" src="img/javascript.svg" alt="Javascript">
-               <img class="abilities__img" src="img/npm.svg" alt="NPM">
-            </div>
-         </section>
-
-         <section class="projects" id="projects">
-            <h2 class="heading mb-large">Proyectos</h2>
-            <div class="container">
-               <div class="container__card">
-                  <div class="container__imgBx">
-                     <a href="#"> <img class="container__img" src="img/project-1.jpg" alt="Project 1"> </a>
-                  </div>
-                  <h2 class="container__title">Proyecto 1</h2>
-               </div>
-               <div class="container__card">
-                  <div class="container__imgBx">
-                     <a href="#"> <img class="container__img" src="img/project-2.jpg" alt="Project 2"> </a>
-                  </div>
-                  <h2 class="container__title">Proyecto 2</h2>
-               </div>
-               <div class="container__card">
-                  <div class="container__imgBx">
-                     <a href="#"> <img class="container__img" src="img/project-3.jpg" alt="Project 3"> </a>
-                  </div>
-                  <h2 class="container__title">Proyecto 3</h2>
-               </div>
-            </div>
-         </section>
-
-         <section class="contact" id="contact">
-            <form class="contact__form" action="https://submit-form.com/hMbY5oEFgi9AS3uRAJz6N" target="_self" method="post">
+			<section class="contact" id="contact">
+				<form class="contact__form" action="https://submit-form.com/hMbY5oEFgi9AS3uRAJz6N" target="_self" method="post">
 					<h3>Contacto</h3>
 					<div class="contact__box">
-                  <div class="contact__input">
+						<div class="contact__input">
 							<input type="text" name="nombre" required>
 							<span>Nombre</span>
 						</div>
@@ -99,26 +110,34 @@
 						</div>
 						<div class="contact__input button">
 							<input type="submit" value="Enviar">
-                     <!-- <button type="submit"> Enviar </button> -->
-                     <!-- <i class="far fa-paper-plane"></i> -->
-                  </div>
-               </div>
-   			</form>
-         </section>
-      </main>
+							<!-- <button type="submit"> Enviar </button> -->
+							<!-- <i class="far fa-paper-plane"></i> -->
+						</div>
+					</div>
+				</form>
+			</section>
+		</main>
 
-      <footer class="footer">
-         <ul class="footer__list">
-            <li class="footer__item"> <a class="footer__link" href="http://linkedin.com/in/pablo-martin-cruz" target="_blank"> <i class="fab fa-linkedin"></i> </a> </li>
-            <li class="footer__item"> <a class="footer__link" href="https://github.com/Pablo-MC" target="_blank"> <i class="fab fa-github"></i> </a> </li>
-            <li class="footer__item"> <a class="footer__link" href="https://www.facebook.com/Martin.p.cruz.1988" target="_blank"> <i class="fab fa-facebook-square"></i> </a> </li>
-         </ul>
-         <p class="footer__copyright"> &copy;  Pablo Martín Cruz &spades; 2020 </p>
-      </footer>
+		<footer class="footer">
+			<ul class="footer__list">
+				<li class="footer__item">
+					<a class="footer__link" href="http://linkedin.com/in/pablo-martin-cruz" target="_blank">
+						<i class="fab fa-linkedin"></i>
+					</a>
+				</li>
+				<li class="footer__item">
+					<a class="footer__link" href="https://github.com/Pablo-MC" target="_blank"> <i class="fab fa-github"></i> </a>
+				</li>
+				<li class="footer__item">
+					<a class="footer__link" href="https://www.facebook.com/pablo.m.cruz.88" target="_blank"> <i
+							class="fab fa-facebook-square"></i> </a>
+				</li>
+			</ul>
+			<p class="footer__copyright"> &copy; Pablo Martín Cruz &spades; 2020 </p>
+		</footer>
 
-      <div class="scrollTop" onclick="scrollToTop();"></div>  <!-- Animación Scroll Top -->
+		<div class="scrollTop" onclick="scrollToTop();"></div> <!-- Animación Scroll Top -->
 
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-      <script src="js/script.js"></script>
-   </body>
+		<script src="js/script.js"></script>
+	</body>
 </html>

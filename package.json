@@ -1,31 +1,21 @@
 {
-   "name": "portafolio",
-   "version": "1.0.0",
-   "description": "Portafolio Web Page",
-   "main": "index.js",
-   "scripts": {
-      "watch:sass": "node-sass sass/main.scss css/style.css -w",
-      "devserver": "live-server --browser=firefox",
-      "start": "npm-run-all --parallel devserver watch:sass",
-      "compile:sass": "node-sass sass/main.scss css/style.comp.css",
-      "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" css/style.comp.css -o css/style.prefix.css",
-      "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
-      "build:css": "npm-run-all compile:sass prefix:css compress:css"
-   },
-   "repository": {
-      "type": "git",
-      "url": "git+https://github.com/Pablo-MC/portfolio.git"
-   },
-   "author": "Pablo Martin Cruz",
-   "license": "ISC",
-   "bugs": {
-      "url": "https://github.com/Pablo-MC/portfolio/issues"
-   },
-   "homepage": "https://github.com/Pablo-MC/portfolio#readme",
-   "devDependencies": {
-      "autoprefixer": "^9.8.0",
-      "node-sass": "^4.14.1",
-      "npm-run-all": "^4.1.5",
-      "postcss-cli": "^7.1.1"
-   }
+	"name": "portfolio",
+	"version": "1.0.0",
+	"description": "Portafolio Web Page",
+	"main": "index.html",
+	"scripts": {
+		"start": "parcel index.html",
+		"build": "parcel build index.html --dist-dir ./dist"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Pablo-MC/portfolio.git"
+	},
+	"author": "Pablo Martin Cruz",
+	"license": "ISC",
+	"devDependencies": {
+		"@parcel/transformer-sass": "^2.0.0-nightly.735",
+		"parcel": "^2.0.0-nightly.733",
+		"sass": "^1.35.1"
+	}
 }

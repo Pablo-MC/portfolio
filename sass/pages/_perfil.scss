@@ -23,6 +23,9 @@
    &-photo {
       justify-self: center;
 
-      &__img { width: 40rem; }
+      &__img { 
+         width: 40rem; 
+         border-radius: 50%;
+      }
    }
 }
