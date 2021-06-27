@@ -1,0 +1,27 @@
+.abilities {
+	padding: 6rem 4rem 10rem 4rem;
+	// background: #334467;
+	background: #112d42;
+
+	&__gallery {
+		max-width: 70rem;
+		margin: 0 auto;
+
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(min-content, 15rem));
+		justify-content: center;
+		grid-gap: 2rem;
+	}
+
+	&__img {
+		width: 15rem;
+		height: 15rem;
+		padding: 2.5rem;
+		box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.5);
+		border-radius: 2rem;
+
+		&:hover {
+			animation: slow_motion 0.7s ease-in-out;
+		}
+	}
+}

@@ -1,5 +1,4 @@
-@import "abstracts/variables";
-
+@import "base/variables";
 @import "base/animations";
 @import "base/base";
 @import "base/typography";
@@ -9,7 +8,7 @@
 @import "layout/header";
 @import "layout/footer";
 
-@import "pages/abilities";
-@import "pages/contact";
-@import "pages/perfil";
-@import "pages/projects";
+@import "sections/abilities";
+@import "sections/contact";
+@import "sections/perfil";
+@import "sections/projects";

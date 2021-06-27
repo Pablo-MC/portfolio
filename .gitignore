@@ -1,4 +1,6 @@
-# Dependencias:
+# Dependencias
 node_modules/
+
+# Parcel 
 dist/
 .parcel-cache
