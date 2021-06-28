@@ -1,32 +1,32 @@
 .perfil {
-	padding: 8rem 4rem;
-	background-image: linear-gradient(315deg, #537895 0%, #15212d 74%);
+  padding: 8rem 4rem;
+  background-image: linear-gradient(315deg, #537895 0%, #15212d 74%);
 
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(min-content, 50rem));
-	justify-content: center;
-	grid-gap: 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min-content, 50rem));
+  justify-content: center;
+  grid-gap: 5rem;
 
-	&-content {
-			// font-size: 2rem;
+  &-content {
+      // font-size: 2rem;
 
-		&__icon {
-			margin-right: 2rem;
-		}
+    &__icon {
+      margin-right: 2rem;
+    }
 
-		&__name {
-			padding: 2rem;
-			font-size: 4rem;
-			font-weight: 400;
-		}
-	}
+    &__name {
+      padding: 2rem;
+      font-size: 4rem;
+      font-weight: 400;
+    }
+  }
 
-	&-photo {
-		justify-self: center;
+  &-photo {
+    justify-self: center;
 
-		&__img {
-			width: 40rem;
-			border-radius: 50%;
-		}
-	}
+    &__img {
+      width: 40rem;
+      border-radius: 50%;
+    }
+  }
 }

@@ -1,37 +1,37 @@
 @keyframes slow_motion {
-	0% {
-		transform: scale(1);
-	}
-	50% {
-		transform: scale(0.9);
-	}
-	100% {
-		transform: scale(1);
-	}
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 // Animación Scroll Top
 .scrollTop {
-	position: fixed;
-	bottom: 80rem;
-	right: 4rem;
-	width: 6rem;
-	height: 6rem;
-	background: #fff url(./../assets/img/up.png);
-	border-radius: 50%;
-	background-size: 4rem;
-	background-position: center;
-	background-repeat: no-repeat;
-	z-index: 100000;
-	visibility: hidden;
-	opacity: 0;
-	cursor: pointer;
+  position: fixed;
+  bottom: 80rem;
+  right: 4rem;
+  width: 6rem;
+  height: 6rem;
+  background: #fff url(./../assets/img/up.png);
+  border-radius: 50%;
+  background-size: 4rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 100000;
+  visibility: hidden;
+  opacity: 0;
+  cursor: pointer;
 
-	transition: 0.5s;
+  transition: 0.5s;
 }
 
 .scrollTop.active {
-	bottom: 4rem;
-	visibility: visible;
-	opacity: 1;
+  bottom: 4rem;
+  visibility: visible;
+  opacity: 1;
 }

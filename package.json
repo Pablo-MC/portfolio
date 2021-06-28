@@ -1,21 +1,21 @@
 {
-	"name": "portfolio",
-	"version": "1.0.0",
-	"description": "Portafolio Web Page",
-	"main": "index.html",
-	"scripts": {
-		"start": "parcel index.html",
-		"build": "parcel build index.html --dist-dir ./dist"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/Pablo-MC/portfolio.git"
-	},
-	"author": "Pablo Martin Cruz",
-	"license": "ISC",
-	"devDependencies": {
-		"@parcel/transformer-sass": "^2.0.0-nightly.735",
-		"parcel": "^2.0.0-nightly.733",
-		"sass": "^1.35.1"
-	}
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portafolio Web Page",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pablo-MC/portfolio.git"
+  },
+  "author": "Pablo Martin Cruz",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.0-nightly.735",
+    "parcel": "^2.0.0-nightly.733",
+    "sass": "^1.35.1"
+  }
 }

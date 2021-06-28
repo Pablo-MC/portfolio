@@ -1,16 +1,16 @@
 .footer {
-	background: #112d42;
-	margin: 0 auto;
-	padding: 3rem 4rem;
+  background: #112d42;
+  margin: 0 auto;
+  padding: 3rem 4rem;
 
-	&__copyright {
-		padding-top: 3rem;
-		font-size: 3rem;
-		text-align: center;
-		letter-spacing: 0.3rem;
-		text-transform: uppercase;
-		color: $color-grey-light-2;
-	}
+  &__copyright {
+    padding-top: 3rem;
+    font-size: 3rem;
+    text-align: center;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    color: $color-grey-light-2;
+  }
 }
 
 
