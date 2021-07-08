@@ -13,6 +13,18 @@
   }
 }
 
-
-
-
+.list {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+  
+	&__item { list-style: none; } 
+  
+  &__link {
+    margin: auto 2.5rem;
+    font-size: 6rem;
+    color: $color-primary;
+    
+    i:hover { animation: slow_motion 0.7s ease-in-out; }
+  }
+}
